@@ -12,6 +12,8 @@ class Mentor:
         self.name = name
         self.surname = surname
         self.courses_attached = []
+class Lecturer(Mentor):
+class Reviewer(mentor):  
         
     def rate_hw(self, student, course, grade):
         if isinstance(student, Student) and course in self.courses_attached and course in student.courses_in_progress:
